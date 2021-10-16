@@ -1,0 +1,47 @@
+## Summary
+
+- Boolean type
+  - Values are true or false
+  - Not an alias for other types (e.g. int)
+  - Zero value is false
+  - Non initialize values are zero
+- Numeric Types
+  - Integers
+    - Signed integers
+      - int type has varying size, but min 32 bits
+      - 8 bit (int8) through 64 bit (int64)
+    - Unsigned integers
+      - 8 bit (byte and uint8) through 32 bit (uint32)
+    - Arithmetic operations
+      - Addition, substraction, multiplication, division, remainder
+    - Bitwise operations
+      - And, or, xor and not
+    - Zero value is 0
+    - Can't mix types in same family (uint32 + uint16 = error)
+  - Floating point numbers
+    - 32 and 64 bit versions
+    - Literal types
+      - Decimal (3.14)
+      - Exponential (10e16)
+      - Mixed (13.7e12)
+    - Arithmetic operations
+      - Addition, substraction, multiplication, division
+  - Complex Numbers
+    - Zero value is (0 + 0i)
+    - 64 and 128 bit versions
+    - Built-in functions
+      - complex - make complex number from two floats
+      - real - get real part as float
+      - imag - get imaginary part as float
+    - Arithmetic operations
+      - Addition, substraction, multiplication, division
+  - Text Types
+    - Strings
+      - UTF-8
+      - Immutable
+      - Can be concatenated with (+) operator
+      - Can be converted to []byte
+    - Rune
+      - UTF-32
+      - Alias for int32
+      - Special methods normally requires to process
